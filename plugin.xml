@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" id="cordovauseragent" version="1.0.0">
+    <name>Cordova User Agent</name>
+    <description>Add a custom suffix to the user agent in Cordova</description>
+    <license>Apache 2.0</license>
+    <platform name="ios">
+        <config-file target="config.xml" parent="/*">
+            <feature name="CDVUserAgent">
+                <param name="ios-package" value="CDVUserAgent"/>
+                <param name="onload" value="true" />
+            </feature>
+        </config-file>
+        <header-file src="src/ios/CDVUserAgent.h" />
+        <source-file src="src/ios/CDVUserAgent.m" />
+    </platform>
+</plugin>
