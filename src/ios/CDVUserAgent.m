@@ -12,7 +12,8 @@
 
 - (void)finishLaunching:(NSNotification *)notification
 {
-    NSString* suffixUA = @" trendsales-shell";
+    NSString* suffix = [self.commandDelegate.settings objectForKey:[@"suffix" lowercaseString]];
+    NSString* suffixUA = [NSString stringWithFormat:@" %@", suffix];
     UIWebView* webView = [[UIWebView alloc] initWithFrame:CGRectZero];
     NSString* defaultUA = [webView stringByEvaluatingJavaScriptFromString:@"navigator.userAgent"];
     NSString* finalUA = [defaultUA stringByAppendingString:suffixUA];
