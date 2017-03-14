@@ -19,6 +19,6 @@ public class UserAgent extends CordovaPlugin {
     int suffixRes = cordova.getActivity().getResources().getIdentifier("suffix", "string", cordova.getActivity().getPackageName());
     String suffix = cordova.getActivity().getString(suffixRes);
 
-    settings.setUserAgentString(text + " " + suffix);
+    settings.setUserAgentString(original + " " + suffix);
   }
 }
