@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" id="cordova-user-agent" version="1.0.0">
-    <name>Cordova User Agent</name>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" id="cordova-user-agent-suffix" version="1.0.0">
+    <name>Cordova User Agent Suffix</name>
     <description>Add a custom suffix to the user agent in Cordova</description>
     <license>Apache 2.0</license>
     <platform name="ios">
@@ -19,13 +19,13 @@
         <preference name="SUFFIX" />
         <config-file target="res/xml/config.xml" parent="/*">
             <feature name="UserAgent" >
-		            <param name="android-package" value="com.trendsales.UserAgent"/>
+		            <param name="android-package" value="com.trendsales.UserAgent.UserAgentPlugin"/>
                 <param name="onload" value="true" />
 			      </feature>
         </config-file>
         <config-file target="res/values/strings.xml" parent="/*">
             <string name="suffix">$SUFFIX</string>
         </config-file>
-		    <source-file src="src/android/UserAgent.java" target-dir="src/ts/cordova/UserAgent" />
+		    <source-file src="src/android/UserAgentPlugin.java" target-dir="src/com/trendsales/UserAgent" />
     </platform>
 </plugin>

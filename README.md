@@ -1,4 +1,4 @@
-# Cordova User Agent
+# Cordova User Agent Suffix
 
 Adds the ability to add a custom suffix to the UserAgent string, to differentiate traffic
 

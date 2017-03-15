@@ -8,7 +8,7 @@ import org.apache.cordova.CordovaInterface;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 
-public class UserAgent extends CordovaPlugin {
+public class UserAgentPlugin extends CordovaPlugin {
 
   @Override
   public void initialize(CordovaInterface cordova, CordovaWebView webView) {
