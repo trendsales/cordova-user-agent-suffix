@@ -10,5 +10,5 @@ Adds the ability to add a custom suffix to the UserAgent string, to differentiat
 ## Install
 
 ```bash
-$ cordova plugin add https://github.com/trendsales/shell.git -variable SUFFIX="my-cordova-app"
+$ cordova plugin add https://github.com/trendsales/cordova-user-agent-suffix.git -variable SUFFIX="my-cordova-app"
 ```
